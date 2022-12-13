@@ -1,0 +1,51 @@
+.navbar-item {
+    background-color: rgb(17, 45, 78);
+    color: rgb(253, 253, 253);
+}
+
+.button.is-info {
+    background-color: rgb(17, 45, 78);
+    border-color: transparent;
+    color: #fff;
+}
+
+.button.is-info:hover {
+    background-color: rgb(26, 57, 92);
+    border-color: transparent;
+    color: #fff;
+}
+
+.navbar-menu{
+    background-color: rgb(17, 45, 78);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand{
+    background-color: rgb(17, 45, 78);
+}
+
+.navbar-burger {
+    color: rgb(253, 253, 253);
+}
+
+.navbar-burger a:hover {
+    color: rgb(253, 253, 253);
+}
+
+.navbar-item img {
+    max-height: none;
+}
+
+.bodyclass {
+    background: linear-gradient(150deg, rgba(75, 123, 180, 1), rgba(110, 150, 210, 1));
+}
+
+.footer {
+    background-color: rgb(26, 57, 92);
+    padding: 3rem 1.5rem 3rem;
+    color: #fff;
+}
+
+.footer a {
+    color: rgb(211, 203, 203);
+}

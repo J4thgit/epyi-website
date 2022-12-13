@@ -1,17 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Hello Bulma!</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
-    </head>
-    <body>
-        <section class="section">
-            <div class="container">
-                <h1 class="title">Coucou</h1>
-                <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Epyi Dev | ESX Legacy FiveM Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body class="bodyclass">
+    <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: rgba(75, 123, 180, 1);">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://j4thgit.github.io/epyi-website/"><img src="logo_white.png" width="50" height="50"/></a>
+
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+                <div class="navbar-item"></div>
+                    <div class="buttons">
+                        <a class="button is-info"> Home </a>
+                        <a class="button is-info" href="https://epyidev.tebex.io" target="_blank"> Tebex Shop </a>
+                        <a class="button is-info"> Developement on demand </a>
+                        <a class="button is-info" href="https://discord.gg/w2fu67YQzA" target="_blank"> Join Discord </a>
+                    </div>
+                </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </nav>
+
+
+
+    <section class="section">
+      <div class="container">
+        <center>
+            <img src="logo.png" width="400vh"/>
+            <h1 class="title" style="color: white;">Epyi, FiveM ESX Legacy Developer</h1>
+            <p class="subtitle" style="color: white;">Nearly 4 years of FiveM development experience</p>
+        </center>
+        <br/>
+        <br/>
+        <br/>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Ce site a été développé par <a href="https://j4thgit.github.io/epyi-website/">Epyi</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+        });
+        });
+        });
+    </script>
+  </body>
 </html>
